@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="card form-card">
+    <div class="card-body">
+        <div class="text-center">
+            <h2>Generate a Tsattisto</h2>
+        </div>
+        <form method="POST" action="/">
+            <div class="form-group text-center">
+                <label for="theme">Enter a theme (Cypriotic_culture, Cypriotic_liberation,<br>Philosophy, Romance, Empathy):</label>
+                <input type="text" class="form-control mx-auto" id="theme" name="theme" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Generate Poem</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
